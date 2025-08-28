@@ -141,7 +141,7 @@
 - **lint:** applied linting to code ([774d32c](https://github.com/botpress/nlu/commit/774d32c4f5b414ebd4d22cbd8b4de027feee5f62))
 - **sentry:** use sentry enabled instead of DSN for the configuration ([e89301c](https://github.com/botpress/nlu/commit/e89301cb5d633b6ba9649bb0d9164235885e9308))
 - **style:** fix codestyle for tests, lint & formatting ([c9c572a](https://github.com/botpress/nlu/commit/c9c572a76110c6c54ef8a60bd727ae33e65eb018))
-- **worker:** fix node typings to pass environement variables correctly when spawning new thread ([#76](https://github.com/botpress/nlu/issues/76)) ([853a3f3](https://github.com/botpress/nlu/commit/853a3f3d7de38471cf4539dc395c6bf7b8ee9a27))
+- **worker:** fix node typings to pass environment variables correctly when spawning new thread ([#76](https://github.com/botpress/nlu/issues/76)) ([853a3f3](https://github.com/botpress/nlu/commit/853a3f3d7de38471cf4539dc395c6bf7b8ee9a27))
 - run unit tests of all yarn packages from the root ([26670d3](https://github.com/botpress/nlu/commit/26670d30de797f3fa8c95b55330270157a79f1d1))
 - **style:** fix codestyle for tests, lint & formatting ([cacbf94](https://github.com/botpress/nlu/commit/cacbf948a5f8589ce5bfd6402d3578b48c816497))
 - undefined logger in slot tagger ([b2c688d](https://github.com/botpress/nlu/commit/b2c688dbef69fbda677adc701a23843f47504499))
