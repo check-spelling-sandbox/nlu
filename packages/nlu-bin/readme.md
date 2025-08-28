@@ -15,7 +15,7 @@ your/nlu/exe
 │   └── --version # display nlu-server version
 └── lang
     ├── start (default) # launch the lang server
-    ├── download # download languange models
+    ├── download # download language models
     ├── init # create empty configuration file for lang-server
     └── --version # display lang-server version
 ```
