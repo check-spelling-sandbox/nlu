@@ -14,7 +14,7 @@
 - **nlu-engine:** stop progress watchdog when done or error ([#214](https://github.com/botpress/nlu/issues/214)) ([0661abd](https://github.com/botpress/nlu/commit/0661abd043c22f03381f77561020de64d78b15bc))
 - **nlu-server:** ensure forward slashes in app id wont break fs model repo ([#173](https://github.com/botpress/nlu/issues/173)) ([889aa7c](https://github.com/botpress/nlu/commit/889aa7c447f1647d9da1483d5157fc279d543c63))
 - **nlu-server:** fix send training_time using db config ([6225ef1](https://github.com/botpress/nlu/commit/6225ef124ecc719385afe667f5904885404f6418))
-- no more dupplicated issues in in-mem linting repo ([46cc134](https://github.com/botpress/nlu/commit/46cc13464b4aeaf51289a7f30f1992c377341b47))
+- no more duplicated issues in in-mem linting repo ([46cc134](https://github.com/botpress/nlu/commit/46cc13464b4aeaf51289a7f30f1992c377341b47))
 - **worker:** do not reuse a process if it exited since last usage ([#135](https://github.com/botpress/nlu/issues/135)) ([9c3ab74](https://github.com/botpress/nlu/commit/9c3ab74c1c798fccd5e52e87bda9c4a34ac3d6b2))
 
 ### Features
