@@ -381,7 +381,7 @@ TrainerModel::SentencePieces Trainer::PruneSentencePieces(
       //         = current_sum + freq[i] (alternatives - 1)
       const float logsum_alt = log(sum + freq[i] * (alternatives.size() - 1));
 
-      // The frequencies of altenatives are increased by freq[i].
+      // The frequencies of alternatives are increased by freq[i].
       float logprob_alt = 0.0;
       for (const int n : alternatives[i]) {
         logprob_alt += (log(freq[n] + freq[i]) - logsum_alt);
