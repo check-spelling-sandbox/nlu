@@ -11,7 +11,7 @@ describe('System Entity Cache', () => {
     testCache = new SystemEntityCacheManager(testCachePath, false)
     inputExemples = [
       'Hello my name is pedro',
-      'I know this sentences are not the same than the entity bellow',
+      'I know this sentences are not the same than the entity below',
       "But... we don't care, it's just a test okay ?!"
     ]
     const inputResults: EntityExtractionResult[][] = [
