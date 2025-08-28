@@ -8,7 +8,7 @@ import { AxiosRequestConfig, AxiosInstance } from 'axios'
 export type LanguageInfo = {
   version: string
   ready: boolean
-  dimentions: number
+  dimensions: number
   domain: string
   readOnly: boolean
 }

@@ -17,8 +17,8 @@ export function euclideanDistanceSquared(a: number[], b: number[]): number {
 }
 
 /**
- * Vectorial distance between two N-dimentional points
- * a[] and b[] must be of same dimention
+ * Vectorial distance between two N-dimensional points
+ * a[] and b[] must be of same dimension
  */
 export function euclideanDistance(a: number[], b: number[]): number {
   return Math.sqrt(euclideanDistanceSquared(a, b))
