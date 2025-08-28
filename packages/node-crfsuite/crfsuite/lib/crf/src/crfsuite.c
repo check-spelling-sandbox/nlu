@@ -433,7 +433,7 @@ void crfsuite_evaluation_finalize(crfsuite_evaluation_t* eval)
         }
     }
 
-    /* Copute the macro precision, recall, and f1-measure values. */
+    /* Compute the macro precision, recall, and f1-measure values. */
     eval->macro_precision /= eval->num_labels;
     eval->macro_recall /= eval->num_labels;
     eval->macro_fmeasure /= eval->num_labels;
