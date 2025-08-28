@@ -164,7 +164,7 @@ enum {
      *  a is the step length.
      */
     LBFGS_LINESEARCH_BACKTRACKING_ARMIJO = 1,
-    /** The backtracking method with the defualt (regular Wolfe) condition. */
+    /** The backtracking method with the default (regular Wolfe) condition. */
     LBFGS_LINESEARCH_BACKTRACKING = 2,
     /**
      * Backtracking method with regular Wolfe condition.
