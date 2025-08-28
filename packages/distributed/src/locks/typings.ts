@@ -7,7 +7,7 @@ export type Transaction<T> = {
  * Prevents race conditions by only running one task at a time.
  * Tasks are simply called when its there turn to run.
  *
- * Does not involve to mannualy check if lock is free.
+ * Does not involve to manually check if lock is free.
  */
 export type TransactionLocker<T> = {
   /**
