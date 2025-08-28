@@ -23,7 +23,7 @@ import ms from 'ms'
 import { LangApplication } from '../application'
 
 import { monitoringMiddleware, startMonitoring } from './monitoring'
-import { authMiddleware } from './mw-authentification'
+import { authMiddleware } from './mw-authentication'
 import { handleUnexpectedError } from './mw-handle-error'
 import { serviceLoadingMiddleware } from './mw-service-loading'
 import { validateTokenizeRequestBody, validateVectorizeRequestBody } from './validation/body'
