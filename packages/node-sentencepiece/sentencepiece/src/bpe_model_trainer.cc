@@ -215,8 +215,8 @@ util::Status Trainer::Train() {
   // Main loop.
   CHECK_OR_RETURN(final_pieces_.empty());
   while (final_pieces_.size() < static_cast<size_t>(vocab_size)) {
-    constexpr int kUpdateActiveSymbolsInteval = 100;
-    if (final_pieces_.size() % kUpdateActiveSymbolsInteval == 0) {
+    constexpr int kUpdateActiveSymbolsInterval = 100;
+    if (final_pieces_.size() % kUpdateActiveSymbolsInterval == 0) {
       UpdateActiveSymbols();
     }
 
