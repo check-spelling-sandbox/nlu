@@ -30,7 +30,7 @@ bool NodeArgument::isOnlyDouble(const char *str)
 }
 
 /**
-   * Concenate string
+   * Concatenate string
    */
 char *NodeArgument::concat(const char *s1, const char *s2)
 {
