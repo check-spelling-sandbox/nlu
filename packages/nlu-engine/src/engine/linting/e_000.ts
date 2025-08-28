@@ -61,9 +61,9 @@ const unitToIssue = ({ intent, utterance, utteranceIdx, slot, slotDef }: Verific
     source: slot.source
   })
 
-const splitEntities = (entitieDefs: EntityDefinition[]) => {
-  const listEntities = entitieDefs.filter(isListEntity)
-  const patternEntities = entitieDefs.filter(isPatternEntity)
+const splitEntities = (entityDefs: EntityDefinition[]) => {
+  const listEntities = entityDefs.filter(isListEntity)
+  const patternEntities = entityDefs.filter(isPatternEntity)
   return {
     listEntities,
     patternEntities

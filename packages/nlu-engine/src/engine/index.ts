@@ -151,7 +151,7 @@ export default class Engine implements IEngine {
             .keyBy((e) => e.name)
             .mapValues((e) => e.synonyms)
             .value(),
-          cache: [] // TODO: bring back list entitiy caching
+          cache: [] // TODO: bring back list entity caching
         }
     )
 
