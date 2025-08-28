@@ -58,7 +58,7 @@ bool SetFlag(const std::string &name, const std::string &value) {
   std::string v = value;
   Flag *flag = it->second;
 
-  // If empty value is set, we assume true or emtpy string is set
+  // If empty value is set, we assume true or empty string is set
   // for boolean or string option. With other types, setting fails.
   if (value.empty()) {
     switch (flag->type) {
