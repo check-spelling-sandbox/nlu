@@ -247,7 +247,7 @@ crf1df_feature_t* crf1df_generate(
         }
     }
 
-    /* Convert the feature set to an feature array. */
+    /* Convert the feature set to a feature array. */
     features = featureset_generate(ptr_num_features, set, minfreq);
 
     /* Delete the feature set. */

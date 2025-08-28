@@ -117,7 +117,7 @@ export class PGDistributedTaskQueue<TId, TInput, TData, TError>
     }
   }
 
-  // for if an completly busy instance receives a queue task http call
+  // for if a completly busy instance receives a queue task http call
   protected runSchedulerInterrupt() {
     return this._obs.emit('run_scheduler_interrupt', undefined)
   }
