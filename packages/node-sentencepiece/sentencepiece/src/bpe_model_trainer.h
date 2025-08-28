@@ -40,7 +40,7 @@ class Trainer : public TrainerInterface {
   struct Symbol {
     const Symbol *left;              // left symbol in bigram
     const Symbol *right;             // right symbol in bigram
-    string_util::UnicodeText chars;  // all flattend chracter sequence
+    string_util::UnicodeText chars;  // all flattend character sequence
     bool is_unk;                     // true if this symbol is unknown.
     uint64 fp;                       // fingerprint of this symbol.
     uint64 freq;                     // frequency of this symbol.
