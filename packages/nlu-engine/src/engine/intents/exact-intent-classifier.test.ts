@@ -86,7 +86,7 @@ describe('Exact match intent classifier', () => {
     }
   })
 
-  // This test is dependant of utterance.toString() implementation. Ideally we would mock the utterance class.
+  // This test is dependent of utterance.toString() implementation. Ideally we would mock the utterance class.
   test('clf matches even when casing or special characters', async () => {
     let exactMatchIntentClf = new ExactIntenClassifier()
     const model = await exactMatchIntentClf.train(

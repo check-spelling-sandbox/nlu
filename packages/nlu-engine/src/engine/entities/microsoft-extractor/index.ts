@@ -5,7 +5,7 @@ import { EntityExtractionResult, SystemEntityExtractor, KeyedItem } from '../../
 import { SystemEntityCacheManager } from '../entity-cache'
 import {
   GlobalRecognizers,
-  LanguageDependantRecognizers,
+  LanguageDependentRecognizers,
   DucklingUnitMapping,
   DucklingDateMappings,
   DucklingTypeMappings,
@@ -48,7 +48,7 @@ export class MicrosoftEntityExtractor implements SystemEntityExtractor {
       ? { lang: 'en', recognizers: [...GlobalRecognizers] }
       : {
           lang,
-          recognizers: [...LanguageDependantRecognizers, ...GlobalRecognizers]
+          recognizers: [...LanguageDependentRecognizers, ...GlobalRecognizers]
         }
 
     const [cached, toFetch] = this._cache.splitCacheHitFromCacheMiss(inputs, !!useCache)
