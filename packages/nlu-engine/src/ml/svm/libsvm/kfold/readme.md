@@ -70,7 +70,7 @@ The following table shows safe values of k for different dataset and kfold algor
 | 4   | [x, x, x, +, o]          | [1, 5]                 | [1 ... 5]                  |
 | 5   | [x, x, x, x, +, +, o, o] | [1, 3 ... 8]           | [1 ... 8]                  |
 
-Example 5 is counter intuitive. Even if n<sub>lrc</sub> is 1, the ammount of non-dominant samples n<sub>~mrc</sub> is 2. \
+Example 5 is counter intuitive. Even if n<sub>lrc</sub> is 1, the amount of non-dominant samples n<sub>~mrc</sub> is 2. \
 It is not problematic to have a fold with only one class. What is problematic is to have k - 1 folds with only one class. Therefore, the following split is perfectly acceptable:
 
 | k1         | k2         | k3         | k4         |
