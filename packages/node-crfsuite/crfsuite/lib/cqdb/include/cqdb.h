@@ -458,7 +458,7 @@ error_exit:
 
 @section performance Performance
 
-An experiment for performance comparision with
+An experiment for performance comparison with
 <a href="http://www.oracle.com/database/berkeley-db/">Berkeley DB (BDB) 4.5.20</a>
 and <a href="http://qdbm.sourceforge.net/">Quick Database Manager (QDBM) 1.8.75</a>
 was conducted.
