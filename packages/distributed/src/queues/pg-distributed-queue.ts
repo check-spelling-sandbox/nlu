@@ -105,7 +105,7 @@ export class PGDistributedTaskQueue<TId, TInput, TData, TError>
 
   private _handleCancelTaskEvent = async (taskId: TId, clusterId: string) => {
     if (clusterId !== this._clusterId) {
-      return // message was not adressed to this instance
+      return // message was not addressed to this instance
     }
 
     try {
