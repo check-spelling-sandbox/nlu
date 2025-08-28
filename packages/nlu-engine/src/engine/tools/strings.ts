@@ -230,8 +230,8 @@ export function damerauLevenshtein(a: string, b: string) {
 /**
  * @returns number of alpha characters in a string
  */
-export const countAlpha = (cantidate: string): number =>
-  (cantidate.toLowerCase().replace(/\s/g, '').match(/[a-z]/g) || []).length
+export const countAlpha = (candidate: string): number =>
+  (candidate.toLowerCase().replace(/\s/g, '').match(/[a-z]/g) || []).length
 
 /**
  * @returns number of digits characters in a string
