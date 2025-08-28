@@ -25,7 +25,7 @@ test('remove none intent', () => {
   expect(withoutNone.intents.some((i) => i.name === 'none')).toBe(false)
 })
 
-test('ajdust to 100', () => {
+test('adjust to 100', () => {
   // arrange
   const nlu: NoneableIntentPredictions = {
     oos: 0.99,
