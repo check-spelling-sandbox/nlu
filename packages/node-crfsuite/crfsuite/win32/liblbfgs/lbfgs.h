@@ -732,7 +732,7 @@ Special thanks go to:
     - Kevin S. Van Horn, Nic Schraudolph, and Tamas Nepusz for bug fixes
 
 Finally I would like to thank the original author, Jorge Nocedal, who has been
-distributing the effieicnt and explanatory implementation in an open source
+distributing the efficient and explanatory implementation in an open source
 licence.
 
 @section reference Reference
