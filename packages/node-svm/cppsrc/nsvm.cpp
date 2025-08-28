@@ -171,7 +171,7 @@ Napi::Value NSVM::svmPredict(const Napi::CallbackInfo &info)
 
   if (!this->_state->modelIsTrained)
   {
-    Napi::TypeError::New(env, "model was already freed from memory, instanciate a new NSVM").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "model was already freed from memory, instantiate a new NSVM").ThrowAsJavaScriptException();
     return env.Null();
   }
 
@@ -199,7 +199,7 @@ Napi::Value NSVM::svmPredictAsync(const Napi::CallbackInfo &info)
 
   if (!this->_state->modelIsTrained)
   {
-    Napi::TypeError::New(env, "model was already freed from memory, instanciate a new NSVM").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "model was already freed from memory, instantiate a new NSVM").ThrowAsJavaScriptException();
     return env.Null();
   }
 
@@ -235,7 +235,7 @@ Napi::Value NSVM::svmPredictProbability(const Napi::CallbackInfo &info)
 
   if (!this->_state->modelIsTrained)
   {
-    Napi::TypeError::New(env, "model was already freed from memory, instanciate a new NSVM").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "model was already freed from memory, instantiate a new NSVM").ThrowAsJavaScriptException();
     return env.Null();
   }
 
@@ -270,7 +270,7 @@ Napi::Value NSVM::svmPredictProbabilityAsync(const Napi::CallbackInfo &info)
 
   if (!this->_state->modelIsTrained)
   {
-    Napi::TypeError::New(env, "model was already freed from memory, instanciate a new NSVM").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "model was already freed from memory, instantiate a new NSVM").ThrowAsJavaScriptException();
     return env.Null();
   }
 
