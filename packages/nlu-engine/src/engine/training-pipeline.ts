@@ -329,7 +329,7 @@ async function trainSlotTaggers(
     const model = await slotTagger.train(
       {
         intent,
-        list_entites: input.list_entities
+        list_entities: input.list_entities
       },
       (p) => {
         const completion = (i + p) / input.intents.length
