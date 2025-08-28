@@ -59,4 +59,4 @@ The NLU Server's only purpose is to do NLU.
 
 ## Licensing
 
-Different licences may apply to differents packages of the [./packages](https://github.com/botpress/nlu/tree/master/packages) directory. If no licence is specified, the package is protected by the same license as the [v12 Botpress repository](https://github.com/botpress/v12).
+Different licences may apply to different packages of the [./packages](https://github.com/botpress/nlu/tree/master/packages) directory. If no licence is specified, the package is protected by the same license as the [v12 Botpress repository](https://github.com/botpress/v12).
