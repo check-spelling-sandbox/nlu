@@ -11,8 +11,8 @@ export type Transaction<T> = {
  */
 export type TransactionLocker<T> = {
   /**
-   * Waits for a lock to be free, aquires it and runs function
-   * @param t The async function to run inside the aquire and release lock statement
+   * Waits for a lock to be free, acquires it and runs function
+   * @param t The async function to run inside the acquire and release lock statement
    * @returns A promise that resolves of rejects once the task is done or throws
    */
   runInLock(t: Transaction<T>): Promise<T>
