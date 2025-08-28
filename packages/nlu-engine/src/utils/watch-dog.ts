@@ -45,7 +45,7 @@ export type WatchDog<X extends any[]> = {
  * Running the function mannualy only resets the timmer.
  *
  * @param f Function to run
- * @param ms Max allowed time beetween function invocation
+ * @param ms Max allowed time between function invocation
  * @returns a watchdog object that can be ran or stopped
  */
 export const watchDog = <X extends any[]>(f: Func<X, void>, ms: number): WatchDog<X> => {
