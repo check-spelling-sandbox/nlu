@@ -47,7 +47,7 @@ export const parameters = asYargs({
     type: 'boolean'
   },
   prometheusEnabled: {
-    description: 'When enabled, a prometheus endpoint will be avaiable at /metrics',
+    description: 'When enabled, a prometheus endpoint will be available at /metrics',
     type: 'boolean'
   },
   apmEnabled: {
