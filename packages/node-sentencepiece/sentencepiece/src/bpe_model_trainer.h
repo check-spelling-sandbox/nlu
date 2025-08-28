@@ -100,7 +100,7 @@ class Trainer : public TrainerInterface {
   // Adds it to symbols_cache_ and active_symbols_.
   void AddNewPair(int sid, int left, int right);
 
-  // Resets the fequency of bigram [symbols_[sid][left] symbols_[sid][right]],
+  // Resets the frequency of bigram [symbols_[sid][left] symbols_[sid][right]],
   // if this bigram is not |best|.
   void ResetFreq(int sid, int left, int right, const Symbol *best);
 
