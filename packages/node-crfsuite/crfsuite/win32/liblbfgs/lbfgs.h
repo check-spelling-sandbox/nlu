@@ -241,7 +241,7 @@ typedef struct {
      * The maximum number of iterations.
      *  The lbfgs() function terminates an optimization process with
      *  ::LBFGSERR_MAXIMUMITERATION status code when the iteration count
-     *  exceedes this parameter. Setting this parameter to zero continues an
+     *  exceeds this parameter. Setting this parameter to zero continues an
      *  optimization process until a convergence or error. The default value
      *  is \c 0.
      */
