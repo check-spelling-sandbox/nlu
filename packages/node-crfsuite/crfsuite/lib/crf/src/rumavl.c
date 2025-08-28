@@ -34,7 +34,7 @@
  *--------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------
- *			     DEVELOPEMENT NOTES
+ *			     DEVELOPMENT NOTES
  *
  * Links
  *    Each node has two links, link[0] is the left child, and link[1] is the
