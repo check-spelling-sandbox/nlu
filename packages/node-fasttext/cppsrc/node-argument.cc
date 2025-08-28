@@ -1,5 +1,5 @@
 /**
- * Convert node object arugment to standar argv C or C++ argument
+ * Convert node object argument to standar argv C or C++ argument
  *
  * Author: Yusuf Syaifudin
  * Date: December 6, 2016 10:57 AM
