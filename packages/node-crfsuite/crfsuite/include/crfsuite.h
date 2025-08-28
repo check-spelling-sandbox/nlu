@@ -49,7 +49,7 @@ typedef __int32 int32_t;
  * \addtogroup crfsuite_api CRFSuite C API
  * @{
  *
- *  The CRFSuite C API provides a low-level library for manupulating
+ *  The CRFSuite C API provides a low-level library for manipulating
  *  CRFSuite in C language.
  */
 
