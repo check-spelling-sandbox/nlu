@@ -317,7 +317,7 @@ int rumavl_set (RUMAVL *tree, const void *record)
     /* Since the tree is not empty, we must descend towards the nodes ideal
      * possition, and we may even find an existing node with the same record.
      * We keep a list parents for the eventual node position, because these
-     * parents may become inbalanced by a new insertion. */
+     * parents may become imbalanced by a new insertion. */
 
     stack = NULL;
     node = &tree->root;
@@ -957,7 +957,7 @@ static int rec_cmp (RUMAVL *tree, const void *reca, const void *recb)
 
 /*----------------------------------------------------------------------------
  * Balance - rotate or double rotate as needed. Sometimes simply rotating a
- * tree is inefficient, as it leaves the tree as inbalanced as it was before
+ * tree is inefficient, as it leaves the tree as imbalanced as it was before
  * the rotate. To rectify this, we first rotate the heavier child so that the
  * heavier grandchild is on the outside, then rotate as per normal.
  *
