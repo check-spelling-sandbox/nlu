@@ -45,7 +45,7 @@ message TrainerSpec {
   enum ModelType {
     UNIGRAM = 1;   // Unigram language model with dynamic algorithm
     BPE     = 2;   // Byte Pair Encoding
-    WORD    = 3;   // Delimitered by whitespace.
+    WORD    = 3;   // Delimited by whitespace.
     CHAR    = 4;   // tokenizes into character sequence
   }
   optional ModelType model_type = 3 [ default = UNIGRAM ];
