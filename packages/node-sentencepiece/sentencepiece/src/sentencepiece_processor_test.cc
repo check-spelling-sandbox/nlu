@@ -262,7 +262,7 @@ TEST(SentencepieceProcessorTest, EncodeTest) {
     EXPECT_NOT_OK(sp.Encode("ABC DEF", &spt));
   }
 
-  // Halfwidth to Fullwidith katakana normalization.
+  // Halfwidth to Fullwidth katakana normalization.
   {
     auto mock = MakeUnique<MockModel>();
     const EncodeResult result = {{WS "グー", 3}, {"グル", 4}, {"</s>", 2}};
