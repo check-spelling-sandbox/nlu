@@ -50,7 +50,7 @@ const NONE_UTTERANCES_BOUNDS = {
 }
 
 /**
- * @description Intent classfier composed of 3 smaller components:
+ * @description Intent classifier composed of 3 smaller components:
  *  1 - an SVM intent classifier
  *  2 - an SVM to predict weither the sample is in scope or oos
  *  3 - an exact-matcher to override the prediction made by the SVM when there's an exact match

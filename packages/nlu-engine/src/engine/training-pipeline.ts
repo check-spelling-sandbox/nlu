@@ -13,7 +13,7 @@ import { MultiThreadCustomEntityExtractor } from './entities/custom-extractor/mu
 import { warmEntityCache } from './entities/entity-cache'
 import { makeListEntityModel } from './entities/list-entity-model'
 import { getCtxFeatures } from './intents/context-featurizer'
-import { OOSIntentClassifier } from './intents/oos-intent-classfier'
+import { OOSIntentClassifier } from './intents/oos-intent-classifier'
 import { SvmIntentClassifier } from './intents/svm-intent-classifier'
 import { SlotTagger } from './slots/slot-tagger'
 
