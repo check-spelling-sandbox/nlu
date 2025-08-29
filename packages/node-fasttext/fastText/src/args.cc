@@ -252,9 +252,9 @@ void Args::printBasicHelp() {
 
 void Args::printDictionaryHelp() {
   std::cerr << "\nThe following arguments for the dictionary are optional:\n"
-            << "  -minCount           minimal number of word occurences ["
+            << "  -minCount           minimal number of word occurrences ["
             << minCount << "]\n"
-            << "  -minCountLabel      minimal number of label occurences ["
+            << "  -minCountLabel      minimal number of label occurrences ["
             << minCountLabel << "]\n"
             << "  -wordNgrams         max length of word ngram [" << wordNgrams
             << "]\n"

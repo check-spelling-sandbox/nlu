@@ -184,11 +184,11 @@ const flattenDataset = async (
     intent.slots.map((s) => ({ intent: intent.name, slotDef: s, ...x }))
   )
 
-  const flatSlotOccurences = _.flatMap(flatSlotDefinitions, ({ utterance, ...x }) =>
+  const flatSlotOccurrences = _.flatMap(flatSlotDefinitions, ({ utterance, ...x }) =>
     utterance.slots.map((s) => ({ slot: s, utterance, ...x }))
   )
 
-  return flatSlotOccurences.filter((x) => x.slot.name === x.slotDef.name)
+  return flatSlotOccurrences.filter((x) => x.slot.name === x.slotDef.name)
 }
 
 const matchesCustom = (customEntityExtractor: CustomEntityExtractor) => (unit: VerificationUnit) => {
