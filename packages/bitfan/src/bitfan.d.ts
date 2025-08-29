@@ -132,7 +132,7 @@ export namespace labels {
 }
 
 export namespace tables {
-  export const tabelize: <D>(
+  export const tablize: <D>(
     data: D[],
     disposition: {
       row: (d: D) => string
