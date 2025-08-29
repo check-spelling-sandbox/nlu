@@ -364,7 +364,7 @@ struct tag_crfsuite_trainer {
 
     /**
      * Data structure that contains a flag.
-     * The contained flag tells weither or not to cancel the training.
+     * The contained flag tells whether or not to cancel the training.
      */
     canceller_t * canceller;
 

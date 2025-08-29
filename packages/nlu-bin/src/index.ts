@@ -60,7 +60,7 @@ void yargs
           },
           force: {
             alias: 'f',
-            description: 'Weither or not to override current file.',
+            description: 'Whether or not to override current file.',
             type: 'boolean'
           }
         },
@@ -133,7 +133,7 @@ void yargs
           },
           force: {
             alias: 'f',
-            description: 'Weither or not to override current file.',
+            description: 'Whether or not to override current file.',
             type: 'boolean'
           }
         },

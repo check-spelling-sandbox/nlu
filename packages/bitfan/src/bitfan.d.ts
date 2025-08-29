@@ -249,7 +249,7 @@ export type Prediction<T extends ProblemType> = {
 }
 
 /**
- * @description Function that decides weither or not a test should pass or fail.
+ * @description Function that decides whether or not a test should pass or fail.
  * @returns A number between 0 and 1 where 0 means that the test has failed.
  * For multi-class problems, this number will often be, neither 1 or 0, but a fraction.
  */
