@@ -83,7 +83,7 @@ class TrainerInterface {
   // It loads at most input_sentence_size sentences.
   util::Status LoadSentences();
 
-  // Splits all sentencecs by whitespaces and
+  // Splits all sentences by whitespaces and
   // replace the |sentences_| with tokenized string.
   // e.g.,
   //  [ ["hello world ", 1], ["hi world]" ] =>
