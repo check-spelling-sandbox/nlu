@@ -408,7 +408,7 @@ struct tag_crfsuite_trainer {
     /**
      * Start a training process.
      *  @param  trainer     The pointer to this trainer instance.
-     *  @param  data        The poiinter to the data set.
+     *  @param  data        The pointer to the data set.
      *  @param  filename    The filename to which the trainer stores the model.
      *                      If an empty string is specified, this function
      *                      does not sture the model to a file.
