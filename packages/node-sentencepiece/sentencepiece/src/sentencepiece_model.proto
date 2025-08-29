@@ -188,7 +188,7 @@ message TrainerSpec {
   extensions 200 to max;
 };
 
-// NormalizerSpec encodes a various parameters for string normalizaiton
+// NormalizerSpec encodes a various parameters for string normalization
 message NormalizerSpec {
   // name of normalization rule.
   optional string name = 1;

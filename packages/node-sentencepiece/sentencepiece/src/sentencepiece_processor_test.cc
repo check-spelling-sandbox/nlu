@@ -493,8 +493,8 @@ TEST(SentencepieceProcessorTest, DecodeTest) {
     auto mock = MakeUnique<DecodeMockModel>();
     sp.SetModel(std::move(mock));
 
-    const auto normalizaiton_spec = MakeDefaultNormalizerSpec();
-    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalizaiton_spec));
+    const auto normalization_spec = MakeDefaultNormalizerSpec();
+    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalization_spec));
 
     SentencePieceText spt;
 
@@ -546,8 +546,8 @@ TEST(SentencepieceProcessorTest, DecodeTest) {
     auto mock = MakeUnique<DecodeMockModel>();
     sp.SetModel(std::move(mock));
 
-    const auto normalizaiton_spec = MakeDefaultNormalizerSpec();
-    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalizaiton_spec));
+    const auto normalization_spec = MakeDefaultNormalizerSpec();
+    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalization_spec));
 
     SentencePieceText spt;
 
@@ -565,8 +565,8 @@ TEST(SentencepieceProcessorTest, DecodeTest) {
     auto mock = MakeUnique<DecodeMockModel>();
     sp.SetModel(std::move(mock));
 
-    const auto normalizaiton_spec = MakeDefaultNormalizerSpec();
-    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalizaiton_spec));
+    const auto normalization_spec = MakeDefaultNormalizerSpec();
+    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalization_spec));
 
     SentencePieceText spt;
 
@@ -584,8 +584,8 @@ TEST(SentencepieceProcessorTest, DecodeTest) {
     auto mock = MakeUnique<DecodeMockModel>();
     sp.SetModel(std::move(mock));
 
-    const auto normalizaiton_spec = MakeDefaultNormalizerSpec();
-    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalizaiton_spec));
+    const auto normalization_spec = MakeDefaultNormalizerSpec();
+    sp.SetNormalizer(MakeUnique<normalizer::Normalizer>(normalization_spec));
 
     SentencePieceText spt;
 
