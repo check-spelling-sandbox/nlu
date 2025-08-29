@@ -369,7 +369,7 @@ error_exit:
 
 @subsection sample_reader A reader sample
 
-This sample code issues string queries "00000000", ..., "01000000" to retrive
+This sample code issues string queries "00000000", ..., "01000000" to retrieve
 integer identifiers (forward lookups) and integer queries 0, ..., 1000000 to
 retrieve the strings  "00000000", ..., "01000000". 
 
