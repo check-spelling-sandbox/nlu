@@ -511,7 +511,7 @@ int rumavl_delete (RUMAVL *tree, const void *record)
 
 	/* find heaviest subtree */
 	if ((*node)->balance > 0){
-	    outdir = +1;    /* outter direction */
+	    outdir = +1;    /* outer direction */
 	    dir = -1;	    /* inner direction */
 	    outln = 1;	    /* outer link number */
 	    ln = 0;	    /* inner link number */
