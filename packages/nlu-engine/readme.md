@@ -4,7 +4,7 @@
 
 Contains all Botpress NLU Pipeline and tools packaged under very few classes and functions.
 
-The `makeEngine()` function returns an instance of class `Engine` which is reponsible for:
+The `makeEngine()` function returns an instance of class `Engine` which is responsible for:
 
 - training of a model
 - prediction using a model
