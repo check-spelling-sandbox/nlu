@@ -85,19 +85,19 @@ export class OOSIntentClassifier implements NoneableIntentClassifier<typeof PTBO
 
     let ooScopeProgress = 0
     let inScopeProgress = 0
-    const reportCombinedProgres = () => {
-      const combinedProgres = (ooScopeProgress + inScopeProgress) / 2
-      progress(combinedProgres)
+    const reportCombinedProgress = () => {
+      const combinedProgress = (ooScopeProgress + inScopeProgress) / 2
+      progress(combinedProgress)
     }
 
     const [ooScopeModel, inScopeModel] = await Promise.all([
       this._trainOOScopeSvm(trainInput, noneIntent, (p: number) => {
         ooScopeProgress = p
-        reportCombinedProgres()
+        reportCombinedProgress()
       }),
       this._trainInScopeSvm(trainInput, noneIntent, (p: number) => {
         inScopeProgress = p
-        reportCombinedProgres()
+        reportCombinedProgress()
       })
     ])
 

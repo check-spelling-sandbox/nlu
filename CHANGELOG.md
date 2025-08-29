@@ -157,7 +157,7 @@
 ### Bug Fixes
 
 - exact matcher now works even with different entities ([#56](https://github.com/botpress/nlu/issues/56)) ([6c14b8c](https://github.com/botpress/nlu/commit/6c14b8ce6b14398fcdc621455382c0e18aaa0570))
-- **training:** porgress now won't skip steps ([#55](https://github.com/botpress/nlu/issues/55)) ([4073d61](https://github.com/botpress/nlu/commit/4073d617edf19d683833ee8394ead2376c94fdfa))
+- **training:** progress now won't skip steps ([#55](https://github.com/botpress/nlu/issues/55)) ([4073d61](https://github.com/botpress/nlu/commit/4073d617edf19d683833ee8394ead2376c94fdfa))
 
 ### Features
 
