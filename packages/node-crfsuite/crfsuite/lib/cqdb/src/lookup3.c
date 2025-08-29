@@ -282,7 +282,7 @@ acceptable.  Do NOT use for cryptographic purposes.
 uint32_t hashlittle( const void *key, size_t length, uint32_t initval)
 {
   uint32_t a,b,c;                                          /* internal state */
-  union { const void *ptr; size_t i; } u;     /* needed for Mac Powerbook G4 */
+  union { const void *ptr; size_t i; } u;     /* needed for Mac PowerBook G4 */
 
   /* Set up the internal state */
   a = b = c = 0xdeadbeef + ((uint32_t)length) + initval;
@@ -466,7 +466,7 @@ void hashlittle2(
   uint32_t   *pb)        /* IN: secondary initval, OUT: secondary hash */
 {
   uint32_t a,b,c;                                          /* internal state */
-  union { const void *ptr; size_t i; } u;     /* needed for Mac Powerbook G4 */
+  union { const void *ptr; size_t i; } u;     /* needed for Mac PowerBook G4 */
 
   /* Set up the internal state */
   a = b = c = 0xdeadbeef + ((uint32_t)length) + *pc;
