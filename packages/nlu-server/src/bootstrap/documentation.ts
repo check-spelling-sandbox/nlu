@@ -15,7 +15,7 @@ export const displayDocumentation = (logger: Logger, options: NLUServerOptions) 
 {bold {underline Important Routes}}
 
 {green /**
- * Gets the current version of the NLU engine being used. Usefull to test if your installation is working.
+ * Gets the current version of the NLU engine being used. Useful to test if your installation is working.
  * @returns {bold info}: version and supported languages.
 */}
 {bold GET ${baseUrl}/info}

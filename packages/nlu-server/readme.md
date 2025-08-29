@@ -8,7 +8,7 @@ This package contains the Botpress Standalone NLU server.
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> <b><u>Available Routes</u><span style="font-weight:normal;text-decoration:none;font-style:normal"></span></b></span>
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> </span>
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> <span style="color:#0A0">/**<span style="color:#FFF"></span></span></span>
-<span style="font-weight:normal;text-decoration:none;font-style:normal"> <span style="color:#0A0"> * Gets the current version of the NLU engine being used. Usefull to test if your installation is working.<span style="color:#FFF"></span></span></span>
+<span style="font-weight:normal;text-decoration:none;font-style:normal"> <span style="color:#0A0"> * Gets the current version of the NLU engine being used. Useful to test if your installation is working.<span style="color:#FFF"></span></span></span>
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> <span style="color:#0A0"> * @returns <span style="color:#FFF"><span style="color:#0A0"><b>info<span style="font-weight:normal;text-decoration:none;font-style:normal"><span style="color:#FFF"><span style="color:#0A0">: version, health and supported languages.<span style="color:#FFF"></span></span></span></span></b></span></span></span></span>
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> <span style="color:#0A0">*/<span style="color:#FFF"></span></span></span>
 <span style="font-weight:normal;text-decoration:none;font-style:normal"> <b>GET http://HOST:PORT/v1/info<span style="font-weight:normal;text-decoration:none;font-style:normal"></span></b></span>
