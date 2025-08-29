@@ -29,7 +29,7 @@ test('validating with absent success key should fail', async () => {
   expect(() => validateResponse(call, axiosRes({ someKey: 'some text' }))).toThrow()
 })
 
-test('validating a successfull response should pass', async () => {
+test('validating a successful response should pass', async () => {
   // arrange
   const res: SuccessResponse = { success: true }
 
@@ -71,7 +71,7 @@ test('validating an unsuccessfull response with undefined error should fail', as
   expect(() => validateResponse(call, axiosRes(res))).toThrow()
 })
 
-test('validating a successfull response with unknown keys should pass', async () => {
+test('validating a successful response with unknown keys should pass', async () => {
   // arrange
   const res = <SuccessResponse>{ success: true }
 
