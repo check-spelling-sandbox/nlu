@@ -95,7 +95,7 @@ export namespace sampling {
     dataset: DataSet<T>,
     trainPercent: number,
     seed: number,
-    options?: { stratificate: boolean }
+    options?: { stratify: boolean }
   ) => {
     trainSet: DataSet<T>
     testSet: DataSet<T>
@@ -105,7 +105,7 @@ export namespace sampling {
     dataset: DataSet<T>,
     percent: number,
     seed: number,
-    options?: { stratificate: boolean }
+    options?: { stratify: boolean }
   ) => DataSet<T>
 
   export const sampleClasses: <T extends SingleLabel>(
