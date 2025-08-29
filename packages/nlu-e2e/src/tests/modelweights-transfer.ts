@@ -50,7 +50,7 @@ export const modelWeightsTransferTest: Test = {
     const fileLocation = path.join(cachePath, `${modelId}.model`)
     await assertModelWeightsDownload(modelWeightsTransferArgs, modelId, fileLocation)
 
-    // prune model remotly and ensure prediction does not work
+    // prune model remotely and ensure prediction does not work
     await assertModelsPrune(modelWeightsTransferArgs)
     await assertPredictionFails(modelWeightsTransferArgs, modelId, grocery_test_sample.utterance, 'model_not_found')
 
