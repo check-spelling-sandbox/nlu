@@ -189,7 +189,7 @@ const initialize = async <T>(): Promise<T> => {
     throw new Error(`Linux distribution ${rawDistribution} is not supported by ${packageName}.`)
   }
 
-  throw new Error(`The plateform ${distro.os} is not supported by ${packageName}.`)
+  throw new Error(`The platform ${distro.os} is not supported by ${packageName}.`)
 }
 
 let binding: any | undefined
