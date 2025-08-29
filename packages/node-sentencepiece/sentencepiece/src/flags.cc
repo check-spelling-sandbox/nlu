@@ -133,10 +133,10 @@ bool CommandLineGetFlag(int argc, char **argv, std::string *key,
 }  // namespace
 
 FlagRegister::FlagRegister(const char *name, void *storage,
-                           const void *default_storage, int shortype,
+                           const void *default_storage, int shorttype,
                            const char *help)
     : flag_(new Flag) {
-  flag_->type = shortype;
+  flag_->type = shorttype;
   flag_->storage = storage;
   flag_->default_storage = default_storage;
   flag_->help = help;
