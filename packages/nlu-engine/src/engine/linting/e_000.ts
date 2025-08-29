@@ -233,7 +233,7 @@ export const E_000_Linter: IssueLinter<typeof code> = {
     )
 
     const extractedSystemEntities = await systemEntityExtractor.extractMultiple(
-      withSystemEntities.map((u) => u.utterance.toString()), // use whole utterance here as duckling might be influenced by token postion in utterances and is fast anyway
+      withSystemEntities.map((u) => u.utterance.toString()), // use whole utterance here as duckling might be influenced by token position in utterances and is fast anyway
       ts.language,
       () => {},
       true

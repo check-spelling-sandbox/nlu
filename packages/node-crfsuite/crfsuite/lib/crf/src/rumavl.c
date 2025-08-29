@@ -315,7 +315,7 @@ int rumavl_set (RUMAVL *tree, const void *record)
     }
 
     /* Since the tree is not empty, we must descend towards the nodes ideal
-     * possition, and we may even find an existing node with the same record.
+     * position, and we may even find an existing node with the same record.
      * We keep a list parents for the eventual node position, because these
      * parents may become imbalanced by a new insertion. */
 
