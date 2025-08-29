@@ -158,7 +158,7 @@ int cqdb_writer_close(cqdb_writer_t* dbw);
  *    application to load a database image to a memory block, e.g., to read
  *    the whole image from a file, to use the Memory Mapped File (mmap) API,
  *    etc.
- *    Secondaly, one can design the file format freely only if the memory
+ *    Secondly, one can design the file format freely only if the memory
  *    block for a database is extracted from the file.
  *    
  *    The most fundamental operation on the CQDB reader API is forward lookup
