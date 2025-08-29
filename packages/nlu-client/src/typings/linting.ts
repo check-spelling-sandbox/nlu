@@ -12,7 +12,7 @@ export type IssueCode =
   | 'E_002' // duplicated utterances (in one or more intents)
   | 'E_003' // the whole utterance is tagged as a slot
   | 'W_000' // intents are overlapping
-  | 'I_000' // utterance contains duplicated or untrimed spaces
+  | 'I_000' // utterance contains duplicated or untrimmed spaces
 
 export type Raw<T> = { raw: T }
 export type Clean<T> = { clean: T }

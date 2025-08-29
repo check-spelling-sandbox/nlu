@@ -19,7 +19,7 @@ type VerificationUnit = {
 export const I_000: IssueDefinition<typeof code> = {
   code,
   severity: 'info',
-  name: 'duplicated_or_untrimed_spaces'
+  name: 'duplicated_or_untrimmed_spaces'
 }
 
 const flattenDataset = (ts: TrainInput): VerificationUnit[] => {
