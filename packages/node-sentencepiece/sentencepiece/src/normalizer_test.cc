@@ -160,7 +160,7 @@ TEST(NormalizeTest, NormalizeWithSpaceContainedRules) {
     charsmap[src_chars] = trg_chars;
   };
 
-  // Adds rules containing whitespaes.
+  // Adds rules containing whitespace.
   AddRule("a", " A");
   AddRule("b", "B");
   AddRule("c", "D E");
