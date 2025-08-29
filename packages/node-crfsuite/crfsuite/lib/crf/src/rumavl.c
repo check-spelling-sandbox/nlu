@@ -870,7 +870,7 @@ static void stack_destroy(RUMAVL *tree, RUMAVL_STACK *stack)
 
 /*----------------------------------------------------------------------------
  * stack_update - goes up stack readjusting balance as needed. This function
- * serves as a testiment to the philosophy of commenting while you code, 'cos
+ * serves as a testament to the philosophy of commenting while you code, 'cos
  * hell if I can remember how I got to this. I think is has something to do
  * with the varying effects on tree height, depending on exactly which sub 
  * tree, or sub-sub tree was modified. TODO study and comment
