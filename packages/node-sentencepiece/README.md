@@ -39,7 +39,7 @@ note : windows users also need [Build Tools for Visual Studio package](https://v
 
    `(node) var outputText = proc.decode(pieces, modelPath)`
 
-   `(node) inputText === outpuText`
+   `(node) inputText === outputText`
 
    returns:  
    `true`
