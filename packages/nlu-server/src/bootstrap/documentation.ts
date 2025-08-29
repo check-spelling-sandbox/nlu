@@ -52,7 +52,7 @@ export const displayDocumentation = (logger: Logger, options: NLUServerOptions) 
   * @header {bold x-app-id} Application ID to make sure there's no collision between models of different applications.
   * @path_parameter {bold modelId} The model id you want to use for prediction.
   * @body_parameter {bold utterances} Array of text for which you want a prediction.
-  * @returns {bold predictions} Array of predictions; Each prediction is a data structure reprensenting the understanding of the text.
+  * @returns {bold predictions} Array of predictions; Each prediction is a data structure representing the understanding of the text.
  */}
 {bold POST ${baseUrl}/predict/:modelId}
 
