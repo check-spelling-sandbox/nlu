@@ -42,7 +42,7 @@ export const validateResponse = <S extends SuccessResponse>(
       throw new ClientResponseError(
         call,
         status,
-        'Received unsuccessfull HTTP response with no error. Expected response.error to be an object.'
+        'Received unsuccessful HTTP response with no error. Expected response.error to be an object.'
       )
     }
 

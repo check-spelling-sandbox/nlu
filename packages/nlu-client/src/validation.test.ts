@@ -37,7 +37,7 @@ test('validating a successful response should pass', async () => {
   expect(() => validateResponse(call, axiosRes(res))).not.toThrow()
 })
 
-test('validating an unsuccessfull response with unempty error should pass', async () => {
+test('validating an unsuccessful response with unempty error should pass', async () => {
   // arrange
   const res: ErrorResponse = { success: false, error }
 
@@ -45,7 +45,7 @@ test('validating an unsuccessfull response with unempty error should pass', asyn
   expect(() => validateResponse(call, axiosRes(res))).not.toThrow()
 })
 
-test('validating an unsuccessfull response with empty error message should pass', async () => {
+test('validating an unsuccessful response with empty error message should pass', async () => {
   const error: NLUError = { message: '', code: 500, type: 'internal' }
 
   // arrange
@@ -55,7 +55,7 @@ test('validating an unsuccessfull response with empty error message should pass'
   expect(() => validateResponse(call, axiosRes(res))).not.toThrow()
 })
 
-test('validating an unsuccessfull response with empty error should fail', async () => {
+test('validating an unsuccessful response with empty error should fail', async () => {
   // arrange
   const res: ErrorResponse = { success: false, error: {} as NLUError }
 
@@ -63,7 +63,7 @@ test('validating an unsuccessfull response with empty error should fail', async 
   expect(() => validateResponse(call, axiosRes(res))).toThrow()
 })
 
-test('validating an unsuccessfull response with undefined error should fail', async () => {
+test('validating an unsuccessful response with undefined error should fail', async () => {
   // arrange
   const res: Partial<ErrorResponse> = { success: false }
 
@@ -82,7 +82,7 @@ test('validating a successful response with unknown keys should pass', async () 
   })
 })
 
-test('validating an unsuccessfull response with unknown keys should pass', async () => {
+test('validating an unsuccessful response with unknown keys should pass', async () => {
   // arrange
   const res = <ErrorResponse>{ success: false, error }
 
