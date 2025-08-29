@@ -500,7 +500,7 @@ util::Status Trainer::Train() {
     model.SetSentencePieces(std::move(new_sentencepieces));
   }  // end of EM iteration
 
-  // Finally, adjusts the size of sentencepices to be |vocab_size|.
+  // Finally, adjusts the size of sentencepieces to be |vocab_size|.
   final_pieces_ = FinalizeSentencePieces(model);
 
   return Save();
