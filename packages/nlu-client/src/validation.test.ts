@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios'
 import { HTTPCall } from './http-call'
-import { SuccessReponse, ErrorResponse, NLUError } from './typings/http'
+import { SuccessResponse, ErrorResponse, NLUError } from './typings/http'
 import { validateResponse } from './validation'
 
 const augmentWithExtraKey = (res: Object) => {
@@ -31,7 +31,7 @@ test('validating with absent success key should fail', async () => {
 
 test('validating a successfull response should pass', async () => {
   // arrange
-  const res: SuccessReponse = { success: true }
+  const res: SuccessResponse = { success: true }
 
   // act && assert
   expect(() => validateResponse(call, axiosRes(res))).not.toThrow()
@@ -73,7 +73,7 @@ test('validating an unsuccessfull response with undefined error should fail', as
 
 test('validating a successfull response with unknown keys should pass', async () => {
   // arrange
-  const res = <SuccessReponse>{ success: true }
+  const res = <SuccessResponse>{ success: true }
 
   // act && assert
   const responses = augmentWithExtraKey(res)

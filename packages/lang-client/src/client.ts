@@ -10,7 +10,7 @@ import {
   LanguagesResponseBody,
   DownloadLangResponseBody,
   ErrorResponse,
-  SuccessReponse,
+  SuccessResponse,
   TokenizeRequestBody,
   VectorizeRequestBody
 } from './typings'
@@ -69,25 +69,25 @@ export class LangClient implements IClient {
     return validateResponse<DownloadLangResponseBody>(call, res)
   }
 
-  public async deleteLang(lang: string): Promise<SuccessReponse | ErrorResponse> {
+  public async deleteLang(lang: string): Promise<SuccessResponse | ErrorResponse> {
     const resource = `languages/${lang}/delete`
     const call: HTTPCall<'POST'> = { verb: 'POST', resource }
     const res = await this._post(call)
-    return validateResponse<SuccessReponse>(call, res)
+    return validateResponse<SuccessResponse>(call, res)
   }
 
-  public async loadLang(lang: string): Promise<SuccessReponse | ErrorResponse> {
+  public async loadLang(lang: string): Promise<SuccessResponse | ErrorResponse> {
     const resource = `languages/${lang}/load`
     const call: HTTPCall<'POST'> = { verb: 'POST', resource }
     const res = await this._post(call)
-    return validateResponse<SuccessReponse>(call, res)
+    return validateResponse<SuccessResponse>(call, res)
   }
 
-  public async cancelDownload(downloadId: string): Promise<SuccessReponse | ErrorResponse> {
+  public async cancelDownload(downloadId: string): Promise<SuccessResponse | ErrorResponse> {
     const resource = `languages/cancel/${downloadId}`
     const call: HTTPCall<'POST'> = { verb: 'POST', resource }
     const res = await this._post(call)
-    return validateResponse<SuccessReponse>(call, res)
+    return validateResponse<SuccessResponse>(call, res)
   }
 
   private _post = async (call: HTTPCall<'POST'>, body?: any): Promise<AxiosResponse<any>> => {

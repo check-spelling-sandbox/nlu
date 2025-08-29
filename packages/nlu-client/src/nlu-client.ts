@@ -10,7 +10,7 @@ import {
   TrainRequestBody,
   InfoResponseBody,
   TrainProgressResponseBody,
-  SuccessReponse,
+  SuccessResponse,
   DetectLangRequestBody,
   DetectLangResponseBody,
   ListModelsResponseBody,
@@ -98,12 +98,12 @@ export class NLUClient {
     return validateResponse<LintProgressResponseBody>(call, res)
   }
 
-  public async cancelTraining(appId: string, modelId: string): Promise<SuccessReponse | ErrorResponse> {
+  public async cancelTraining(appId: string, modelId: string): Promise<SuccessResponse | ErrorResponse> {
     const headers = appIdHeader(appId)
     const resource = `train/${modelId}/cancel`
     const call: HTTPCall<'POST'> = { verb: 'POST', resource }
     const res = await this._post(call, {}, { headers })
-    return validateResponse<SuccessReponse>(call, res)
+    return validateResponse<SuccessResponse>(call, res)
   }
 
   /**
@@ -113,12 +113,12 @@ export class NLUClient {
     appId: string,
     modelId: string,
     speed: IssueComputationSpeed
-  ): Promise<SuccessReponse | ErrorResponse> {
+  ): Promise<SuccessResponse | ErrorResponse> {
     const headers = appIdHeader(appId)
     const resource = `lint/${modelId}/${speed}/cancel`
     const call: HTTPCall<'POST'> = { verb: 'POST', resource }
     const res = await this._post(call, {}, { headers })
-    return validateResponse<SuccessReponse>(call, res)
+    return validateResponse<SuccessResponse>(call, res)
   }
 
   public async listModels(appId: string): Promise<ListModelsResponseBody | ErrorResponse> {

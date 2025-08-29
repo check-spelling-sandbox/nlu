@@ -4,7 +4,7 @@ import {
   VectorizeResponseBody,
   LanguagesResponseBody,
   DownloadLangResponseBody,
-  SuccessReponse
+  SuccessResponse
 } from '@botpress/lang-client'
 import { prometheus } from '@botpress/telemetry'
 import { Logger } from '@bpinternal/log4bot'
@@ -185,7 +185,7 @@ export default async function (options: APIOptions, baseLogger: Logger, applicat
     try {
       const { lang } = req.params
       application.deleteLang(lang)
-      const response: SuccessReponse = { success: true }
+      const response: SuccessResponse = { success: true }
       return res.json(response)
     } catch (err) {
       return next(err)
@@ -196,7 +196,7 @@ export default async function (options: APIOptions, baseLogger: Logger, applicat
     try {
       const { lang } = req.params
       await application.loadLang(lang)
-      const response: SuccessReponse = { success: true }
+      const response: SuccessResponse = { success: true }
       return res.json(response)
     } catch (err) {
       return next(err)
@@ -207,7 +207,7 @@ export default async function (options: APIOptions, baseLogger: Logger, applicat
     try {
       const { id } = req.params
       application.cancelDownloadLang(id)
-      const response: SuccessReponse = { success: true }
+      const response: SuccessResponse = { success: true }
       return res.json(response)
     } catch (err) {
       return next(err)

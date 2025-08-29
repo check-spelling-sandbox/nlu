@@ -1,7 +1,7 @@
 import { AxiosResponse } from 'axios'
 import Joi from 'joi'
 import _ from 'lodash'
-import { SuccessReponse, ErrorResponse } from './typings'
+import { SuccessResponse, ErrorResponse } from './typings'
 
 const ERROR_RESPONSE_SCHEMA = Joi.object().keys({
   message: Joi.string().required().allow(''),
@@ -25,7 +25,7 @@ export class ClientResponseError extends Error {
   }
 }
 
-export const validateResponse = <S extends SuccessReponse>(
+export const validateResponse = <S extends SuccessResponse>(
   call: HTTPCall<HTTPVerb>,
   res: AxiosResponse<S | ErrorResponse>
 ): S | ErrorResponse => {
