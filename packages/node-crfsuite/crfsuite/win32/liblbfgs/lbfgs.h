@@ -152,7 +152,7 @@ enum {
 enum {
     /** The default algorithm (MoreThuente method). */
     LBFGS_LINESEARCH_DEFAULT = 0,
-    /** MoreThuente method proposd by More and Thuente. */
+    /** MoreThuente method proposed by More and Thuente. */
     LBFGS_LINESEARCH_MORETHUENTE = 0,
     /**
      * Backtracking method with the Armijo condition.
