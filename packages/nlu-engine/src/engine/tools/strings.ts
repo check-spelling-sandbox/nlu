@@ -18,7 +18,7 @@ export function ngram(value: string, n: number): string[] {
 export function vocabNGram(tokens: string[]): string[] {
   const plainTokens = tokens
     .map((x) => x.replace('\u2581', '')) // We want to discover real language-specific chars
-    .filter((x) => x.length > 1) // We want to exclude tokens that represent ponctuation etc (tokenizers will often split them alone)
+    .filter((x) => x.length > 1) // We want to exclude tokens that represent punctuation etc (tokenizers will often split them alone)
 
   // We build a gramset, which is essentially a list of all the unique bigrams and trigrams
   // We'll create entirely new words from those grams
