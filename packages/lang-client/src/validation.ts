@@ -13,14 +13,14 @@ const ERROR_RESPONSE_SCHEMA = Joi.object().keys({
 export type HTTPVerb = 'GET' | 'POST' | 'PUT' | 'DELETE'
 export type HTTPCall<V extends HTTPVerb> = {
   verb: V
-  ressource: string
+  resource: string
 }
 
 export class ClientResponseError extends Error {
   constructor(call: HTTPCall<HTTPVerb>, status: number, message: string) {
-    const { verb, ressource } = call
-    const ressourcePath = `lang-server/${ressource}`
-    const prefix = status >= 300 ? `${verb} ${ressourcePath} -> ${status}` : `${verb} ${ressourcePath}`
+    const { verb, resource } = call
+    const resourcePath = `lang-server/${resource}`
+    const prefix = status >= 300 ? `${verb} ${resourcePath} -> ${status}` : `${verb} ${resourcePath}`
     super(`(${prefix}) ${message}`)
   }
 }

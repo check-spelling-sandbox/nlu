@@ -16,7 +16,7 @@ const augmentWithExtraKey = (res: Object) => {
 }
 
 const error: NLUError = { code: 500, type: 'internal', message: 'An error' }
-const call: HTTPCall<'GET'> = { verb: 'GET', ressource: '' }
+const call: HTTPCall<'GET'> = { verb: 'GET', resource: '' }
 
 const axiosRes = (data: any): AxiosResponse<any> => {
   const x: Partial<AxiosResponse<any>> = { data, status: 200 }

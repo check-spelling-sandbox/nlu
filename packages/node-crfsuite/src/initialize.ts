@@ -120,9 +120,9 @@ const parseDirName = (dirName: string): ExtensionDir | undefined => {
   }
 }
 
-const acquireLock = (ressource: string): Promise<Mutex> => {
+const acquireLock = (resource: string): Promise<Mutex> => {
   return new Promise<Mutex>((resolve) => {
-    lock(ressource, (releaser) => {
+    lock(resource, (releaser) => {
       resolve({ release: releaser() })
     })
   })

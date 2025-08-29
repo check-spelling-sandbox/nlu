@@ -47,20 +47,20 @@ export class ModelTransferClient {
   }
 
   public async upload(appId: string, weights: Buffer): Promise<PostWeightRes> {
-    const ressource = 'modelweights'
+    const resource = 'modelweights'
     const reqHeaders = {
       ...appIdHeader(appId),
       'content-type': 'application/octet-stream',
       'content-length': weights.length
     }
 
-    const { status } = await this.axios.post(ressource, weights, {
+    const { status } = await this.axios.post(resource, weights, {
       headers: reqHeaders,
       maxContentLength: Infinity,
       maxBodyLength: Infinity
     })
 
-    const call: HTTPCall<'POST'> = { verb: 'POST', ressource }
+    const call: HTTPCall<'POST'> = { verb: 'POST', resource }
 
     if (status >= 500) {
       throw new ClientResponseError(call, status, 'Internal Server Error')
@@ -89,13 +89,13 @@ export class ModelTransferClient {
     modelId: string,
     opts: { responseType: 'stream' | 'arraybuffer' }
   ): Promise<GetWeightRes<GET_WEIGHTS_STATUS, Readable | Buffer>> {
-    const ressource = `modelweights/${modelId}`
+    const resource = `modelweights/${modelId}`
     const { responseType } = opts
 
     const reqHeaders = appIdHeader(appId)
-    const { data, status } = await this.axios.get(ressource, { headers: reqHeaders, responseType })
+    const { data, status } = await this.axios.get(resource, { headers: reqHeaders, responseType })
 
-    const call: HTTPCall<'GET'> = { verb: 'GET', ressource }
+    const call: HTTPCall<'GET'> = { verb: 'GET', resource }
     if (status >= 500) {
       throw new ClientResponseError(call, status, 'Internal Server Error')
     }
