@@ -670,7 +670,7 @@ libLBFGS is distributed under the term of the
     - Configure script for POSIX environments.
     - SSE/SSE2 optimizations with GCC.
     - New functions ::lbfgs_malloc and ::lbfgs_free to use SSE/SSE2 routines
-      transparently. It is uncessary to use these functions for libLBFGS built
+      transparently. It is unnecessary to use these functions for libLBFGS built
       without SSE/SSE2 routines; you can still use any memory allocators if
       SSE/SSE2 routines are disabled in libLBFGS.
 - Version 1.3 (2007-12-16):
