@@ -27,7 +27,7 @@ export const displayDocumentation = (logger: Logger, options: NLUServerOptions) 
   * @body_parameter {bold intents} Intents definitions.
   * @body_parameter {bold contexts} All available contexts.
   * @body_parameter {bold entities} Entities definitions.
-  * @body_parameter {bold seed} Number to seed random number generators used during training (beta feature). {yellow ** Optionnal **}
+  * @body_parameter {bold seed} Number to seed random number generators used during training (beta feature). {yellow ** Optional **}
   * @returns {bold modelId} A model id for future API calls
  */}
 {bold POST ${baseUrl}/train}
