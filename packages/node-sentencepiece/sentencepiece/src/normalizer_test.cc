@@ -146,7 +146,7 @@ TEST(NormalizerTest, NormalizeWithoutEscapeWhitespacesTest) {
   EXPECT_EQ("A B C", normalizer.Normalize("A　 B　 C"));
 }
 
-TEST(NormalizeTest, NomalizeWithSpaceContainedRules) {
+TEST(NormalizeTest, NormalizeWithSpaceContainedRules) {
   Builder::CharsMap charsmap;
 
   auto AddRule = [&](const std::string &src, const std::string &trg) {
