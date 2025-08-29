@@ -76,7 +76,7 @@ export abstract class BaseTaskQueue<TId, TInput, TData, TError> implements ITask
       return this._schedulingTimmer.run()
     } catch (thrown) {
       const err = thrown instanceof Error ? thrown : new Error(`${thrown}`)
-      this._logger.attachError(err).error('An error occured when running scheduler interrupt.')
+      this._logger.attachError(err).error('An error occurred when running scheduler interrupt.')
     }
   }
 

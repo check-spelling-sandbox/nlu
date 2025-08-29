@@ -182,7 +182,7 @@ const initialize = async <T>(): Promise<T> => {
         debuglog('success')
         return binding
       } catch (err) {
-        debuglog('error occured: ', err)
+        debuglog('error occurred: ', err)
       }
     }
 
