@@ -533,7 +533,7 @@ Broyden-Fletcher-Goldfarb-Shanno (L-BFGS) method written by Jorge Nocedal.
 The original FORTRAN source code is available at:
 http://www.ece.northwestern.edu/~nocedal/lbfgs.html
 
-The L-BFGS method solves the unconstrainted minimization problem,
+The L-BFGS method solves the unconstrained minimization problem,
 
 <pre>
     minimize F(x), x = (x1, x2, ..., xN),
