@@ -8,7 +8,7 @@ Locks prevent multiple types of race conditions. Race conditions can occur:
 
 - in single-threaded apps when using asynchronous code
 - in multi-threaded/multi-process apps
-- in mutli-instances apps
+- in multi-instances apps
 
 ## Queues
 
