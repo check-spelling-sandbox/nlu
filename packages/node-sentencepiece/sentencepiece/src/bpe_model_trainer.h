@@ -114,7 +114,7 @@ class Trainer : public TrainerInterface {
   // Set of symbols from which we find the best symbol in each iteration.
   std::set<Symbol *> active_symbols_;
 
-  // Stores symbols allocated in heap so that we can delete them at onece.
+  // Stores symbols allocated in heap so that we can delete them at once.
   std::vector<Symbol *> allocated_;
 
   // Sentences. symbols_[sid][index] stores a symbol in sentence_[sid][index].
