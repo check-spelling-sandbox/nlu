@@ -411,7 +411,7 @@ struct tag_crfsuite_trainer {
      *  @param  data        The pointer to the data set.
      *  @param  filename    The filename to which the trainer stores the model.
      *                      If an empty string is specified, this function
-     *                      does not sture the model to a file.
+     *                      does not store the model to a file.
      *  @param  holdout     The holdout group.
      *  @return int         The status code.
      */
