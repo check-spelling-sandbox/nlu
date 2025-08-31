@@ -107,7 +107,7 @@ export type ModelIdService = {
   areSame: (id1: ModelId, id2: ModelId) => boolean
   isId: (m: string) => boolean
   makeId: (factors: ModelIdArgs) => ModelId
-  briefId: (factors: Partial<ModelIdArgs>) => Partial<ModelId> // makes incomplete Id from incomplete information
+  briefId: (factors: Partial<ModelIdArgs>) => Partial<ModelId> // makes incomplete ID from incomplete information
   halfmd5: (str: string) => string
 }
 
