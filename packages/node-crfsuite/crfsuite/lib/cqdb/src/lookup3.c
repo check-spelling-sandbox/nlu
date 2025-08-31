@@ -450,7 +450,7 @@ uint32_t hashlittle( const void *key, size_t length, uint32_t initval)
 
 
 /*
- * hashlittle2: return 2 32-bit hash values
+ * hashlittle2: return two 32-bit hash values
  *
  * This is identical to hashlittle(), except it returns two 32-bit hash
  * values instead of just one.  This is good enough for hash table

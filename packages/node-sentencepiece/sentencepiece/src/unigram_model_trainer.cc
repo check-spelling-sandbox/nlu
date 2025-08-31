@@ -123,7 +123,7 @@ TrainerModel::SentencePieces Trainer::MakeSeedSentencePieces() const {
   std::vector<int> D(n);   // depths of internal node
 
   // Makes a suffix array to extract all sub strings occurring
-  // more than 2 times in the sentence.
+  // more than two times in the sentence.
   constexpr int kAlphabetSize = 0x110000;  // All UCS4 range.
   int node_num = 0;
   LOG(INFO) << "Making suffix array...";

@@ -522,7 +522,7 @@
 
 /*
  *  Because this file currently only supports platforms which have
- *  precise powers of 2 as bit sizes for the default integers, the
+ *  precise powers of two as bit sizes for the default integers, the
  *  least definitions are all trivial.  Its possible that a future
  *  version of this file could have different definitions.
  */
