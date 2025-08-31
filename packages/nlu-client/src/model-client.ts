@@ -7,7 +7,7 @@ import { ClientResponseError } from './error'
 import { HTTPCall } from './http-call'
 
 type GET_WEIGHTS_STATUS = 'OK' | 'WEIGHTS_TRANSFER_DISABLED' | 'MODEL_NOT_FOUND'
-type POST_WEIGHTS_STATUS = 'OK' | 'WEIGHTS_TRANSFER_DISABLED' | 'INVALID_MODEL_FORMAT' | 'UNSUPORTED_MODEL_SPEC'
+type POST_WEIGHTS_STATUS = 'OK' | 'WEIGHTS_TRANSFER_DISABLED' | 'INVALID_MODEL_FORMAT' | 'UNSUPPORTED_MODEL_SPEC'
 
 const get_status_meanings: Record<GET_WEIGHTS_STATUS, number> = {
   OK: 200,
@@ -19,7 +19,7 @@ const post_status_meanings: Record<POST_WEIGHTS_STATUS, number> = {
   OK: 200,
   INVALID_MODEL_FORMAT: 400,
   WEIGHTS_TRANSFER_DISABLED: 403,
-  UNSUPORTED_MODEL_SPEC: 455 // custom unassigned status code
+  UNSUPPORTED_MODEL_SPEC: 455 // custom unassigned status code
 }
 
 type GetWeightRes<S extends GET_WEIGHTS_STATUS, R extends Readable | Buffer> = S extends 'OK'

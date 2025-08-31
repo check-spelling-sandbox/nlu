@@ -81,7 +81,7 @@ export const modelWeightsTransferTest: Test = {
     )
     const deprecatedFileLocation = path.join(cachePath, `${modelId}.deprecated.model`)
     await fs.promises.writeFile(deprecatedFileLocation, deprecatedWeights)
-    await assertModelWeightsUploadFails(modelWeightsTransferArgs, deprecatedFileLocation, 'UNSUPORTED_MODEL_SPEC')
+    await assertModelWeightsUploadFails(modelWeightsTransferArgs, deprecatedFileLocation, 'UNSUPPORTED_MODEL_SPEC')
 
     // cleanup
     await assertModelsPrune(modelWeightsTransferArgs)
