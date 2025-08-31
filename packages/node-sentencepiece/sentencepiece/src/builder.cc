@@ -202,7 +202,7 @@ util::Status Builder::CompileCharsMap(const CharsMap &chars_map,
     max_nodes_size = std::max(num_nodes, max_nodes_size);
   }
   CHECK_LT_OR_RETURN(max_nodes_size, Normalizer::kMaxTrieResultsSize)
-      << "This charmaps contain many shared prefix. "
+      << "This chars map contains many shared prefix. "
       << "The number of shared prefix must be less than "
       << Normalizer::kMaxTrieResultsSize;
 
