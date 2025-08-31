@@ -174,7 +174,7 @@ export class SVMClassifier
   }
 
   private async _predictOne(preds: Predictors, coordinates: number[]): Promise<Prediction[]> {
-    // might simply use oneclass instead
+    // might simply use one class instead
     const results = await preds.clf.predict(coordinates)
     return [
       {
