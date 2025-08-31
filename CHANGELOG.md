@@ -221,7 +221,7 @@
 - **api:** no need for min 1 context ([e17ae84](https://github.com/botpress/nlu/commit/e17ae84df4d9d1c9d2102ecf3c470547bcf35147))
 - **engine:** spell-checker does not replace entities anymore ([0e0d75a](https://github.com/botpress/nlu/commit/0e0d75a8efa2bb00d9b5c3c08f5873cc66425251))
 - **logger:** no log filter should log all messages ([86e693c](https://github.com/botpress/nlu/commit/86e693c579e5a2a88648dc9810f55821db69b00d))
-- logger attach error no longuer throws ([b84f39a](https://github.com/botpress/nlu/commit/b84f39abd6eea9f8bdd56ec1dbaf5dad5a5e75d4))
+- logger attach error no longer throws ([b84f39a](https://github.com/botpress/nlu/commit/b84f39abd6eea9f8bdd56ec1dbaf5dad5a5e75d4))
 - nanoid is default import from nanoid ([45ca517](https://github.com/botpress/nlu/commit/45ca517250002b230f455049a409867b60cc8836))
 
 ### Features
