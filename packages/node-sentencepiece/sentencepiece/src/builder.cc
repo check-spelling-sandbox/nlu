@@ -480,7 +480,7 @@ util::Status Builder::BuildNmtNFKC_CFMap(CharsMap *chars_map) {
 // static
 util::Status Builder::LoadCharsMap(absl::string_view filename,
                                    CharsMap *chars_map) {
-  LOG(INFO) << "Loading maping file: " << filename.data();
+  LOG(INFO) << "Loading mapping file: " << filename.data();
   CHECK_OR_RETURN(chars_map);
 
   auto input = filesystem::NewReadableFile(filename);
