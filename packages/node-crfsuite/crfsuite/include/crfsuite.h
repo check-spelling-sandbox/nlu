@@ -269,7 +269,7 @@ typedef struct {
 /**
  * Type of callback function for logging.
  *  @param  user        Pointer to the user-defined data.
- *  @param  format      Format string (compatible with prinf()).
+ *  @param  format      Format string (compatible with printf()).
  *  @param  args        Optional arguments for the format string.
  *  @return int         \c 0 to continue; non-zero to cancel the training.
  */
