@@ -523,7 +523,7 @@ int rumavl_delete (RUMAVL *tree, const void *record)
 	}
 	
 	/* Add node to be deleted to the list of nodes to be rebalanced.
-	 * Remember that the replacement node will actually be acted apon,
+	 * Remember that the replacement node will actually be acted upon,
 	 * and that the replacement node should feel the effect of its own
 	 * move */
 	if (stack_push(tree, &stack, node, outdir) != 0)
