@@ -104,7 +104,7 @@ Napi::Value NSVM::svmTrainAsync(const Napi::CallbackInfo &info)
 
   if (info.Length() != 4)
   {
-    Napi::TypeError::New(env, "train_async expects at 4 arguments: train params, X, y adn the callback function").ThrowAsJavaScriptException();
+    Napi::TypeError::New(env, "train_async expects at 4 arguments: train params, X, y and the callback function").ThrowAsJavaScriptException();
     return env.Null();
   }
 
