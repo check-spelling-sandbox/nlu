@@ -75,19 +75,19 @@ export class MicrosoftEntityExtractor implements SystemEntityExtractor {
 
     if (entity.typeName.includes('datetimeV2')) {
       const resolution = entity.resolution as MicrosoftValues
-      const metadatas = resolution.values[0] as MicrosoftTimeValues
+      const timeValues = resolution.values[0] as MicrosoftTimeValues
 
-      unit = metadatas.type
+      unit = timeValues.type
       entity.typeName = DucklingDateMappings[entity.typeName]
 
       switch (entity.typeName) {
         case 'duration':
           // TODO Deal with intervals ! Also need to be fixed in duckling.
-          value = metadatas.start || metadatas.end!
+          value = timeValues.start || timeValues.end!
           break
 
         case 'time':
-          value = metadatas.value!
+          value = timeValues.value!
           break
 
         default:
