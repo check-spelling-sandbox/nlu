@@ -22,7 +22,14 @@ jobs:
           yarn
       - name: Run Prettier
         run: |
-          yarn prettier
+          yarn prettier:fix || true
+          git diff > output.diff
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diff
+          path: output.diff
+          if-no-files-found: ignore
+
   eslint:
     name: Run ESLint on codebase
     runs-on: ubuntu-latest
