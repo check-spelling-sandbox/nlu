@@ -24,7 +24,7 @@ Check out each individual packages for more details.
 
 ## Running from pre-built binaries
 
-New executable binary files are packaged at every release. You can download those directly on release page located [here](https://github.com/botpress/nlu/releases).
+New executable binary files are packaged at every release. You can download those directly on the [release page](https://github.com/botpress/nlu/releases).
 
 ## Telemetry
 
