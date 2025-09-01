@@ -312,7 +312,7 @@ void Args::printQuantizationHelp() {
       << "\nThe following arguments for quantization are optional:\n"
       << "  -cutoff             number of words and ngrams to retain ["
       << cutoff << "]\n"
-      << "  -retrain            whether embeddings are finetuned if a cutoff "
+      << "  -retrain            whether embeddings are fine-tuned if a cutoff "
          "is applied ["
       << boolToString(retrain) << "]\n"
       << "  -qnorm              whether the norm is quantized separately ["
