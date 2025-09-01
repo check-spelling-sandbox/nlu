@@ -102,7 +102,7 @@ describe('Exact match intent classifier', () => {
     exactMatchIntentClf = new ExactIntenClassifier()
     await exactMatchIntentClf.load(model)
 
-    const u1_hat = 'hi mY nAMe is Alex W and I try to maKe nLu for a living' // case insensitive
+    const u1_hat = 'hi mY nAMe is Alex W and I try to maKe nLu for a living' // case-insensitive
     const u2_hat = 'Hi I_m Justine and I_m a smart bot with very scoped skills' // ignore special characters
     const u3_hat = 'Medication makes me high ¿÷≥≤µ˜∫√≈æ' // ignore special characters
 
