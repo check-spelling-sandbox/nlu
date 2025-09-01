@@ -30,7 +30,7 @@ a mix of things, see the comments above hashlittle().
 Why is this so big?  I read 12 bytes at a time into 3 4-byte integers, 
 then mix those integers.  This is fast (you can do a lot more thorough
 mixing with 12*3 instructions on 3 integers than you can with 3 instructions
-on 1 byte), but shoehorning those bytes into integers efficiently is messy.
+on one byte), but shoehorning those bytes into integers efficiently is messy.
 -------------------------------------------------------------------------------
 */
 //#define SELF_TEST 1
