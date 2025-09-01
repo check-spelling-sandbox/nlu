@@ -371,7 +371,7 @@ TEST(NormalizerTest, StatusTest) {
   NormalizerSpec spec;
   {
     const Normalizer normalizer(spec);
-    EXPECT_OK(normalizer.status());  // fallback to identity.
+    EXPECT_OK(normalizer.status());  // fall back to identity.
   }
 
   {
