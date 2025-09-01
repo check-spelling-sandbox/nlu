@@ -202,7 +202,7 @@ static int insert_cb (RUMAVL *t, RUMAVL_NODE *n, void *r1, const void *r2,
  ****************************************************************************/
 
 /*----------------------------------------------------------------------------
- * rumavl_new - allocates a new RUMAVL object, and initialises it. This is the
+ * rumavl_new - allocates a new RUMAVL object, and initializes it. This is the
  * only time the user gets to set the record length and record comparison
  * function, to avoid data loss.
  *--------------------------------------------------------------------------*/
