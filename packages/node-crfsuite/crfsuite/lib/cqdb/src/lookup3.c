@@ -27,9 +27,9 @@ then use c as the hash value.  If you have a variable length array of
 a character string), use hashlittle().  If you have several byte arrays, or
 a mix of things, see the comments above hashlittle().  
 
-Why is this so big?  I read 12 bytes at a time into 3 4-byte integers, 
+Why is this so big?  I read 12 bytes at a time into three 4-byte integers, 
 then mix those integers.  This is fast (you can do a lot more thorough
-mixing with 12*3 instructions on 3 integers than you can with 3 instructions
+mixing with 12*3 instructions on three integers than you can with three instructions
 on one byte), but shoehorning those bytes into integers efficiently is messy.
 -------------------------------------------------------------------------------
 */
@@ -69,7 +69,7 @@ on one byte), but shoehorning those bytes into integers efficiently is messy.
 
 /*
 -------------------------------------------------------------------------------
-mix -- mix 3 32-bit values reversibly.
+mix -- mix three 32-bit values reversibly.
 
 This is reversible, so any information in (a,b,c) before mix() is
 still in (a,b,c) after mix().
