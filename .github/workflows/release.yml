@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Git Unshallow
         run: git fetch --prune --unshallow
       - name: Fetch Node Packages

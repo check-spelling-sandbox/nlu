@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
-      - uses: actions/setup-node@v1
+        uses: actions/checkout@main
+      - uses: actions/setup-node@v4
         with:
           node-version: '16.13.0'
       - name: Fetch Node Packages
