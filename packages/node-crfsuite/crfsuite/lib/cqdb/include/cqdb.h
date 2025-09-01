@@ -88,7 +88,7 @@ enum {
  *    specified.
  *
  *    It is recommended to keep the maximum number of identifiers as smallest as
- *    possible because reverse lookup is maintained by a array with the size of
+ *    possible because reverse lookup is maintained by an array with the size of
  *    sizeof(int) * (maximum number of identifiers + 1). For example, putting a
  *    set of integer identifers (0, 1, 1000) creates a reverse lookup array with
  *    1001 elements only to waste the disk space for 998 (= 1001-3) elements in

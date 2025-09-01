@@ -71,7 +71,7 @@ export const modelWeightsTransferTest: Test = {
     await fs.promises.writeFile(corruptedFileLocation, corruptedWeights)
     await assertModelWeightsUploadFails(modelWeightsTransferArgs, corruptedFileLocation, 'INVALID_MODEL_FORMAT')
 
-    // ensure uploading a older version buffer fails
+    // ensure uploading an older version buffer fails
     const specHash = modelId.split('.')[1]
     const dummySpecHash = 'ffffff9999999999'
     const deprecatedWeights = bufferReplace(

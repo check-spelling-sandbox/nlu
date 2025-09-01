@@ -52,7 +52,7 @@ In other words, the min value assignable to k that ensures no error occurs is:
 
 mink = ⌈<sup>n</sup>&frasl;<sub>(n - n<sub>mrc</sub> - 1)</sub>⌉
 
-Unfortunatly, when n<sub>~mrc</sub> === 1, there is might possibly be no value of k (outside of k === 1) that folds the dataset without creating a invalid fold: a fold containing all non-dominant samples.
+Unfortunatly, when n<sub>~mrc</sub> === 1, there is might possibly be no value of k (outside of k === 1) that folds the dataset without creating an invalid fold: a fold containing all non-dominant samples.
 
 ## Stratified KFold
 
