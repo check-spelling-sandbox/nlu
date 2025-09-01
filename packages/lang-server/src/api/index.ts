@@ -48,7 +48,7 @@ const createExpressApp = async (options: APIOptions, baseLogger: Logger): Promis
   const app = express()
   const requestLogger = baseLogger.sub('api').sub('request')
 
-  // This must be first, otherwise the /info endpoint can't be called when token is used
+  // This must be first; otherwise, the /info endpoint can't be called when token is used
   app.use(cors())
 
   if (options.prometheusEnabled) {
