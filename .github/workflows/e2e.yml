@@ -18,7 +18,7 @@ jobs:
           - 8000:8000
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Setup E2E
         uses: ./.github/actions/setup-e2e
       - name: Start NLU Server
@@ -64,7 +64,7 @@ jobs:
           --health-retries 5
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Setup E2E
         uses: ./.github/actions/setup-e2e
       - name: Start NLU Server
@@ -111,7 +111,7 @@ jobs:
           --health-retries 5
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Setup E2E
         uses: ./.github/actions/setup-e2e
       - name: Start First NLU Server on port 3202
